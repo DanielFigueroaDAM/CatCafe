@@ -1,73 +1,59 @@
+/* estilos-cabecera.css */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
 
-header {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-nav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #111;
-}
-
-.header-content {
-    position: relative;
-}
-
-.header-content img {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-}
-
-.header-content h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.popular-animals {
-    text-align: center;
+.cabecera {
+    background-color: #f8f8f8;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.popular-animals h2 {
-    font-size: 2em;
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.popular-animals p {
-    font-size: 1.2em;
-    color: #555;
+.navegacion li {
+    margin-left: 20px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #0056b3;
+}
+
+.logo img {
+    max-height: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-popular {
+    text-align: center;
+    padding: 40px;
+}
+
+.seccion-popular h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.seccion-popular p {
+    color: #666;
 }
