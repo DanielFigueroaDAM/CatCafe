@@ -1,5 +1,10 @@
+
+
 body {
-    font-family: 'Georgia', serif;
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #FFF9F2;
+    color: #493222;
 }
 
 .container {
@@ -16,6 +22,7 @@ body {
     max-width: 1200px;
     margin: 0 20px;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .left, .right {
@@ -43,11 +50,13 @@ body {
 }
 
 .titulo {
+    
     display: flex;
     margin-bottom: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    
 }
 
 p {
@@ -75,18 +84,27 @@ input, select, textarea, button {
 
 button {
     margin-top: 20px;
-    background-color: #4CAF50;
+    background-color: hsl(29, 36%, 47%);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:burlywood;
 }
 .huellitas{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 20px;
+}
+.footer {
+    background-color: hsl(29, 36%, 47%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
