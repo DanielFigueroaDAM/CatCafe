@@ -10,7 +10,6 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #FFF9F2;
-    
     color: #493222;
 }
 
@@ -48,11 +47,13 @@ body {
 }
 
 .titulo {
+    position: absolute;
     display: flex;
-    margin-bottom: 20px;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    padding-bottom: 20px;
 }
 
 p {
@@ -76,20 +77,24 @@ input, select, textarea, button {
     padding: 10px;
     margin-top: 5px;
     font-size: 1rem;
-    
+}
+
+select[multiple] {
+    height: auto;
+    min-height: 150px; 
+    overflow-y: auto;
 }
 
 button {
     margin-top: 20px;
-    background-color: #ced6da; 
+    background-color: #ced6da;
     color: #493222;
     border: none;
     cursor: pointer;
-    
 }
 
 button:hover {
-    background-color: #b0b8bc; 
+    background-color: #b0b8bc;
 }
 
 .huellitas {
