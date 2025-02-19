@@ -1,5 +1,3 @@
-
-
 body {
     font-family: "Playwrite GB S", serif;
     font-optical-sizing: auto;
@@ -33,30 +31,27 @@ body {
     flex: 1;
     text-align: center;
 }
+
 .mtexto {
     margin-left: 30px;
     display: flex;
     text-align: justify;
     justify-content: center;
     align-items: center;
-    
 }
 
 .right {
-    display: flex;
     display: flex;
     flex: 2;
     text-align: justify;
 }
 
 .titulo {
-    
     display: flex;
     margin-bottom: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 p {
@@ -84,21 +79,23 @@ input, select, textarea, button {
 
 button {
     margin-top: 20px;
-    background-color: hsl(29, 36%, 47%);
+    background-color: #ced6da; /* Cambiar el color del botón */
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color:burlywood;
+    background-color: #b0b8bc; /* Cambiar el color del botón al pasar el cursor */
 }
-.huellitas{
+
+.huellitas {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 20px;
 }
+
 .footer {
     background-color: hsl(29, 36%, 47%);
     color: white;
@@ -108,11 +105,15 @@ button:hover {
     bottom: 0;
     width: 100%;
 }
+
 .contador {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: end;
     align-items: end;
     justify-content: end;
     font-size: 1.25rem;
     color: #493222;
+    width: 100%;
+    display: flex;
 }
