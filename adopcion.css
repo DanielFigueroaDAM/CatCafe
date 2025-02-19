@@ -27,8 +27,9 @@ body {
     text-align: center;
 }
 .mtexto {
+    margin-left: 30px;
     display: flex;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     align-items: center;
     
@@ -41,9 +42,12 @@ body {
     text-align: justify;
 }
 
-h1 {
-    font-size: 2.5rem;
+.titulo {
+    display: flex;
     margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -79,4 +83,10 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+.huellitas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 20px;
 }
