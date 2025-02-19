@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #FFF9F2;
+    
     color: #493222;
 }
 
@@ -75,18 +76,20 @@ input, select, textarea, button {
     padding: 10px;
     margin-top: 5px;
     font-size: 1rem;
+    
 }
 
 button {
     margin-top: 20px;
-    background-color: #ced6da; /* Cambiar el color del botón */
-    color: white;
+    background-color: #ced6da; 
+    color: #493222;
     border: none;
     cursor: pointer;
+    
 }
 
 button:hover {
-    background-color: #b0b8bc; /* Cambiar el color del botón al pasar el cursor */
+    background-color: #b0b8bc; 
 }
 
 .huellitas {
