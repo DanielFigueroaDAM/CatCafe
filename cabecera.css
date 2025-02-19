@@ -7,7 +7,7 @@ body {
 }
 
 .cabecera {
-    background-color: #f8f8f8;
+  background-color: #eee4d9;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body {
 
 
 .text {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
   }
