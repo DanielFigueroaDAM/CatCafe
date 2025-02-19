@@ -10,10 +10,8 @@ body {
   background-color: #eee4d9;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    font-size: 25px;  
 }
 
 .navegacion ul {
@@ -24,7 +22,7 @@ body {
 }
 
 .navegacion li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .navegacion a {
@@ -84,4 +82,12 @@ body {
 .imageninic{
     height: 100%;
     width: 100%;
+}
+.paramarg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+
 }
