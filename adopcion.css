@@ -108,3 +108,11 @@ button:hover {
     bottom: 0;
     width: 100%;
 }
+.contador {
+    margin-top: 20px;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+    font-size: 1.25rem;
+    color: #493222;
+}
