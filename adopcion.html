@@ -3,21 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>adopcion</title>
     <link rel="stylesheet" href="adopcion.css">
+
 </head>
---
+
 <body>
     <div class="container">
         <div class="left">
             <h1>Trabajamos por y para los gatos.</h1>
+            <p></p>
+            <form action="/submit-adoption" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email" >Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="michimariñeiro@gmail.com">
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required placeholder="Rúa dos Bigotes Nº 7, 3ºD, 15701, Vigo">
+                
+                <label for="cat">Gato que quieres adoptar:</label>
+                <select id="cat" name="cat" required>
+                    <option value="gato1">Félix</option>
+                    <option value="gato2">Mía</option>
+                    <option value="gato3">Toby</option>
+                    <option value="gato4">Nala</option>
+                    <option value="gato5">Goliat</option>
+                    <option value="gato6">ChickenMcNugget</option>
+                </select>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
         <div class="right">
-            <p>ABRIGA es la Asociación Benéfica por el Rescate e Inserción de Gatos en Adopción, asociada sin ánimo de lucro de ámbito nacional, constituida en 2013, con CIF G86829327.</p>
-            <p>Es la entidad cr--xxxxeadora y gestora de La Gatoteca, siendo su proyecto principal, más visible y 100% solidario. Es una forma diferente de rescatar y fomentar la adopción de los gatos más invisibles, ya que se acoge directamente a la población, a través de la posibilidad de interactuar con ellos en su hábitat natural.</p>
-            <p>Trabaja en el mundo felino de forma exclusiva y global, y que invierte grandes esfuerzos también en apoyar los proyectos CER (Control Ético y Responsable) de colonias felinas, fomentando el bienestar del gato en el hogar, y la promoción de actividades educativas y lúdicas para un mayor conocimiento y entendimiento del gato.</p>
+            <p class="mtexto">ABRIGA es la Asociación Benéfica por el Rescate e Inserción de Gatos en Adopción, asociada sin ánimo de lucro de ámbito nacional, constituida en 2013, con CIF G86829327.
+            Es la entidad creadora y gestora de La Gatoteca, siendo su proyecto principal, más visible y 100% solidario.
+             Es una forma diferente de rescatar y fomentar la adopción de los gatos más invisibles, ya que se acoge directamente a la población,
+            a través de la posibilidad de interactuar con ellos en su hábitat natural.
+            Trabaja en el mundo felino de forma exclusiva y global, y que invierte grandes esfuerzos también en apoyar los proyectos CER 
+            (Control Ético y Responsable) de colonias felinas, fomentando el bienestar del gato en el hogar,
+             y la promoción de actividades educativas y lúdicas para un mayor conocimiento y entendimiento del gato.</p>
         </div>
     </div>
-
 </body>
 </html>
