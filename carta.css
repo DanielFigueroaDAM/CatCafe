@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF9F2;
+    margin: 0;
+    padding: 0;
+    color: #493222;
+}
+
+.contenedor-principal {
+    width: 90%;
+    max-width: 1200px; /* Ampliar el tamaño del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    background-color: #496977;
+    color: #FFF9F2;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.fecha {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Menú de categorías */
+.menu-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Estilos generales de los botones */
+.menu-categorias .categoria-tab {
+    text-decoration: none;
+    background-color: #AC6532;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Mostrar solo la sección activa */
+.categoria-seccion {
+    display: none;
+}
+
+/* Mostrar la sección cuando está en :target */
+.categoria-seccion:target {
+    display: block;
+}
+
+/* Cambiar color del botón activo según la sección seleccionada */
+.menu-categorias a[href="#popular"]:target,
+.menu-categorias a[href="#bolleria"]:target,
+.menu-categorias a[href="#cafes"]:target {
+    background-color: #493222;
+}
+
+/* Si no hay una sección activa, resaltar "Popular" por defecto */
+.menu-categorias a:first-child {
+    background-color: #493222;
+}
+
+/* Contenedor de productos */
+.contenedor-productos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    gap: 40px; /* Aumentar el espacio entre las tarjetas */
+    margin-top: 40px;
+    justify-items: center; /* Centrar las tarjetas dentro de las columnas */
+}
+
+/* Ocultar todas las secciones por defecto */
+.categoria-seccion {
+    display: none;
+    width: 100%;
+}
+
+/* Mostrar la sección activa cuando está en el target */
+.categoria-seccion:target {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    justify-items: center; /* Centrar las tarjetas dentro de las columnas */
+    gap: 40px; /* Aumentar el espacio entre las tarjetas */
+    margin-top: 20px;
+}
+
+/* Contenedor de la tarjeta */
+.producto {
+    background-color: #D4A373;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 10px 5px; /* Ajuste del padding */
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-top: 20px; /* Reducir margen superior */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.producto img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 160px; /* Mantener tamaño de la imagen reducido */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Nombre del producto */
+.producto h3 {
+    font-size: 16px;
+    color: #FFF9F2;
+    margin-top: 110px;
+}
+
+/* Precio */
+.producto .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #493222;
+}
