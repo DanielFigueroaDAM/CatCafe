@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+}
+
+.head{
+    background-color: bisque;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+div{
+    background-color: wheat;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+    
+}
