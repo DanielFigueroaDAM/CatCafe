@@ -1,6 +1,4 @@
 body {
-    
-
     font-family: "Cabin", serif;    
     margin: 0;
     padding: 0;
@@ -16,8 +14,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 20px;
+    max-width: 90%; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
     width: 100%;
     margin-bottom: 80px;
 }
@@ -29,10 +27,11 @@ body {
 .left {
     flex: 1;
     text-align: center;
+    width: 45%; /* Ajusta el tamaño de la sección izquierda */
 }
 
 .mtexto {
-    margin-left: 30px;
+    margin-left: 30px;  
     display: flex;
     text-align: justify;
     justify-content: center;
@@ -43,17 +42,18 @@ body {
     display: flex;
     flex: 2;
     text-align: justify;
+    width: 45%; /* Ajusta el tamaño de la sección derecha */
 }
 
 .titulo {
     font-family: "Titan One", serif;
-    
+    font-size: 2.5rem; /* Ajusta el tamaño del título */
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 25%;
+    margin-left: 43%;
     padding-bottom: 20px;
 }
 
@@ -113,6 +113,7 @@ button:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 1rem; /* Ajusta el tamaño del texto del footer */
 }
 
 .contador {
