@@ -55,7 +55,7 @@ body {
 
 /* Mostrar la sección cuando está en :target */
 .categoria-seccion:target {
-    display: block;
+    display: grid;
 }
 
 /* Cambiar color del botón activo según la sección seleccionada */
