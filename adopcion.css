@@ -1,8 +1,7 @@
 body {
-    font-family: "Playwrite GB S", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    
+
+    font-family: "Cabin", serif;    
     margin: 0;
     padding: 0;
     display: flex;
@@ -47,6 +46,8 @@ body {
 }
 
 .titulo {
+    font-family: "Titan One", serif;
+    
     position: absolute;
     display: flex;
     justify-content: center;

@@ -6,8 +6,9 @@
     <title>adopcion</title>
     <link rel="stylesheet" href="adopcion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:wght@100..400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="container">
@@ -28,7 +29,7 @@
                 <input type="text" id="address" name="address" required placeholder="Rúa Don Bigotes Nº 7, 3ºD, 15701, Vigo">
                 
                 <label for="cat">Gato que quieres adoptar:</label>
-                <select id="cat" name="cat" multiple required>
+                <select id="cat" name="cat"  required> <!-- multiple?? -->
                     <option value="gato1">Félix</option>
                     <option value="gato2">Mía</option>
                     <option value="gato3">Toby</option>
@@ -45,7 +46,7 @@
                 </select>
                 
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="2" required></textarea>
                 
                 <button type="submit">Enviar</button>
             </form>
