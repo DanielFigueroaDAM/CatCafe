@@ -29,7 +29,6 @@ body {
     align-items: center;
     text-align: center;
     height: 10vh;
-    
 }
 
 .contenido {
@@ -40,9 +39,57 @@ body {
 
 .formulario {
     display: flex;
+    flex-direction: column;
     height: 85vh;
     width: 50%;
-    
+    padding: 1.5vw;
+}
+
+.descripccion {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 50%;
+    padding: 1.5vw;
+}
+
+.mtexto {
+    margin-left: 3vw;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%; /* Ajusta el ancho del footer */
+    background-color: hsl(29, 36%, 47%);
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1vw; 
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -68,12 +115,6 @@ input, select, textarea, button {
     font-size: 1vw;
 }
 
-select[multiple] {
-    height: auto;
-    min-height: 15vh;
-    overflow-y: auto;
-}
-
 button {
     margin-top: 2vh;
     background-color: #ced6da;
@@ -84,67 +125,4 @@ button {
 
 button:hover {
     background-color: #b0b8bc;
-}
-
-.descripccion {
-    display: flex;
-    height: 85vh;
-    width: 50%;
-    
-}
-
-.mtexto {
-    margin-left: 3vw;
-    display: flex;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-}
-
-.descripccion {
-    display: flex;
-    flex: 1;
-    text-align: justify;
-    width: 45vw;
-    flex-direction: column;
-}
-
-
-.formulario, .descripccion{
-    padding: 1.5vw;
-}
-
-
-
-.footer {
-    background-color: hsl(29, 36%, 47%);
-    display: flex;
-    margin-left: 5vw;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 90vw;
-    
-    color: white;
-    text-align: center;
-    padding: 2vh 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 1vw; 
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1vw;
-}
-
-.footer a:hover {
-    text-decoration: underline;
 }
