@@ -1,0 +1,62 @@
+body {
+    font-family: "Cabin", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF9F2;
+    color: #493222;
+    flex-direction: column;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 80vw; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 5vw; /* Agrega un margen de 5vw a cada lado */
+    width: 100%;
+}
+
+.titulo {
+    background-color: red;
+    font-family: "Titan One", serif;
+    font-size: 2.5vw; /* Ajusta el tamaño del título */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+}
+
+.contenido {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    height: 85vh;
+    width: 50%;
+    background-color: yellow;
+}
+
+.descripccion {
+    display: flex;
+    height: 85vh;
+    width: 50%;
+    background-color: green;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: blue;
+    width: 100%;
+}
