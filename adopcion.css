@@ -1,5 +1,5 @@
 body {
-    font-family: "Cabin", serif;    
+    font-family: "Cabin", serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,30 +8,31 @@ body {
     height: 100vh;
     background-color: #FFF9F2;
     color: #493222;
+    flex-direction: column;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 90%; /* Ajusta el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
+    max-width: 80vw; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 5vw; /* Agrega un margen de 5vw a cada lado */
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 8vh;
 }
 
 .left, .right {
-    padding: 15px;
+    padding: 1.5vw;
 }
 
 .left {
     flex: 1;
     text-align: center;
-    width: 45%; /* Ajusta el tamaño de la sección izquierda */
+    width: 45vw; /* Ajusta el tamaño de la sección izquierda */
 }
 
 .mtexto {
-    margin-left: 30px;  
+    margin-left: 3vw;
     display: flex;
     text-align: justify;
     justify-content: center;
@@ -40,25 +41,27 @@ body {
 
 .right {
     display: flex;
-    flex: 2;
+    flex: 1;
     text-align: justify;
-    width: 45%; /* Ajusta el tamaño de la sección derecha */
+    width: 45vw; /* Ajusta el tamaño de la sección derecha */
+    flex-direction: column;
 }
 
 .titulo {
     font-family: "Titan One", serif;
-    font-size: 2.5rem; /* Ajusta el tamaño del título */
+    font-size: 2.5vw; /* Ajusta el tamaño del título */
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 43%;
-    padding-bottom: 20px;
+    margin-top: 2vh;
+    margin-bottom: 200px;
+    
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1.125vw;
     line-height: 1.6;
 }
 
@@ -69,25 +72,25 @@ form {
 }
 
 label {
-    margin-top: 10px;
-    font-size: 1rem;
+    margin-top: 1vh;
+    font-size: 1vw;
 }
 
 input, select, textarea, button {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 1rem;
+    padding: 1vh;
+    margin-top: 0.5vh;
+    font-size: 1vw;
 }
 
 select[multiple] {
     height: auto;
-    min-height: 150px; 
+    min-height: 15vh;
     overflow-y: auto;
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 2vh;
     background-color: #ced6da;
     color: #493222;
     border: none;
@@ -102,28 +105,39 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: 20px;
+    margin-top: 1vh;
 }
 
 .footer {
     background-color: hsl(29, 36%, 47%);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 2vh 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    font-size: 1rem; /* Ajusta el tamaño del texto del footer */
+    width: 100vw;
+    font-size: 1vw; 
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .contador {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: end;
-    align-items: end;
-    justify-content: end;
-    font-size: 1.25rem;
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    font-size: 1.25vw;
     color: #493222;
-    width: 100%;
-    display: flex;
+    text-align: right;
 }
