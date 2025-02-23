@@ -6,8 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFF9F2;
     color: #493222;
+    background-color: #FFF9F2;
     flex-direction: column;
 }
 
@@ -15,21 +15,21 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    max-width: 80vw; /* Ajusta el ancho máximo del contenedor */
-    margin: 0 5vw; /* Agrega un margen de 5vw a cada lado */
+    max-width: 80vw; 
+    margin: 0 5vw; 
     width: 100%;
 }
 
 .titulo {
-    background-color: red;
     font-family: "Titan One", serif;
-    font-size: 2.5vw; /* Ajusta el tamaño del título */
+    font-size: 2.5vw; 
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 10vh;
+    
 }
 
 .contenido {
@@ -42,21 +42,109 @@ body {
     display: flex;
     height: 85vh;
     width: 50%;
-    background-color: yellow;
+    
+}
+
+p {
+    font-size: 1.125vw;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-top: 1vh;
+    font-size: 1vw;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 1vh;
+    margin-top: 0.5vh;
+    font-size: 1vw;
+}
+
+select[multiple] {
+    height: auto;
+    min-height: 15vh;
+    overflow-y: auto;
+}
+
+button {
+    margin-top: 2vh;
+    background-color: #ced6da;
+    color: #493222;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b0b8bc;
 }
 
 .descripccion {
     display: flex;
     height: 85vh;
     width: 50%;
-    background-color: green;
+    
 }
 
-.footer {
+.mtexto {
+    margin-left: 3vw;
     display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripccion {
+    display: flex;
+    flex: 1;
+    text-align: justify;
+    width: 45vw;
+    flex-direction: column;
+}
+
+
+.formulario, .descripccion{
+    padding: 1.5vw;
+}
+
+
+
+.footer {
+    background-color: hsl(29, 36%, 47%);
+    display: flex;
+    margin-left: 5vw;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background-color: blue;
-    width: 100%;
+    width: 90vw;
+    
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1vw; 
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
