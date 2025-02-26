@@ -99,7 +99,15 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
 /* Mostrar solo la sección activa */
 .categoria-seccion {
     display: none;
-    width: 100%;
+    
+}
+
+#popular {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 /* Mostrar la sección cuando está en :target */
