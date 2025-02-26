@@ -1,45 +1,79 @@
-body{
-    background-color: #FFF9F2;
-    font-family: "Cabin", serif; 
+body {
+    background-color: #f7f1e6;
+    font-family: "Cabin", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto asegura que el body ocupe toda la altura de la ventana */
+    flex-direction: column; /* Para organizar todo de manera vertical */
+    color: #493222;
 }
 
-.head{
-    
-    background-color: #AC6532;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    font-family: "Titan One", serif;
+
+div {
+    background-color: #f7f1e6;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* O lo que sea necesario para la organización */
+    width: 100%;
+    text-align: center; /* Asegura que el contenido de texto esté centrado */
 }
-div{
-    background-color: #FFF9F2;
-      justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-img{
+
+img {
     margin-top: 50px;
     height: 350px;
     width: 350px;
-    
 }
-.primeros3{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
 
-}
-.segundos3{
+.primeros3, .segundos3 {
     display: flex;
     flex-direction: row;
-    text-align: left;
+    justify-content: center; /* Centra los elementos dentro de estos contenedores */
+    text-align: center; /* Asegura que el texto dentro de estos también se centre */
+    gap: 100px; /* Añade espacio entre las columnas */
+    align-items: flex-start;
 }
+
+
+
+h1 {
+    font-family: "Titan One", serif;
+    font-size: 2.5vw; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    font-weight: 400;
+}
+.gato {
+    align-items: center;
+    justify-content: center;
+    max-width: 35%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 10px auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+div{
+    max-width: 80%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+
+.gato h2 {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+}
+
+img{
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+}
+
 
 .titan-one-regular {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  .primerg{
-    margin-left: 3vw;
-  }
+}

@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Cabin', sans-serif;
-    background-color: #FFF9F2;
+    background-color: #f7f1e6;
     margin: 0;
     padding: 0;
     color: #493222;
@@ -9,13 +9,19 @@ body {
 
 h1 {
     font-family: "Titan One", serif;
-    font-weight: 300;
-    font-style: normal;
+    font-size: 2.5vw; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    font-weight: 400;
 }
 
 a {
     font-family: "Titan One", serif;
-    font-weight: 50;
+    font-weight: 400;
     font-style: normal;
 }
 .contenedor-principal {
@@ -32,29 +38,26 @@ a {
     padding: 5px;
 }
 
-.fecha {
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
-}
 
 /* Menú de categorías */
 .menu-categorias {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin: 20px 0;
 }
 
 /* Estilo general para todos los botones en el menú */
 .menu-categorias .categoria-tab {
     text-decoration: none;
-    background-color: #AC6532; /* Color base para todos los botones */
-    color: white;
+    background-color: hsl(29, 36%, 47%);
+    color: white;    
     padding: 10px 15px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 400;
     transition: color 0.3s ease;
+    
 }
 
 
@@ -67,6 +70,11 @@ a {
     margin-top: 20px;
 }
 
+.menu-categorias .categoria-tab:hover {
+    color: #493222;
+    font-weight: 400; /* También se asegura el peso aquí */
+}
+
 /* Cambiar color de texto del botón activo */
 body:has(#popular:target) .menu-categorias a[href="#popular"],
 body:has(#bolleria:target) .menu-categorias a[href="#bolleria"],
@@ -74,6 +82,7 @@ body:has(#cafes:target) .menu-categorias a[href="#cafes"],
 body:has(#tes:target) .menu-categorias a[href="#tes"],
 body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
     color: #493222; /* Color de texto cuando está activo */
+    font-weight: 400;
 }
 
 
@@ -104,7 +113,7 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
 
 /* Contenedor de la tarjeta */
 .producto {
-    background-color: #D4A373;
+    background-color: hsl(29, 36%, 47%);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 5px 5px;
@@ -118,9 +127,6 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
     justify-content: space-between;
 }
 
-.producto:hover {
-    transform: scale(1.05);
-}
 
 /* Imagen del producto */
 .producto img {
@@ -144,10 +150,12 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
 
 /* Nombre del producto */
 .producto h3 {
+    font-weight: 400;
     font-size: 16px;
     color: #FFF9F2;
     margin-top: 110px;
     margin-bottom: 2px;
+    
 }
 
 /* Descripción del producto */
