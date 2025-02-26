@@ -1,127 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta del Cat Café</title>
     <link rel="stylesheet" href="carta.css">
+    <!--Cabin-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <!--Titan One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
 
     <div class="contenedor-principal">
         <header class="encabezado">
             <h1>Nuestra Carta</h1>
-            
         </header>
 
         <!-- Menú de categorías -->
-        <nav class="menu-categorias">
-            <a href="#populares" class="categoria-tab activa">Populares</a>
-            <a href="#cafes" class="categoria-tab">Cafés</a>
-            <a href="#tes" class="categoria-tab">Tés e Infusiones</a>
-            <a href="#bolleria" class="categoria-tab">Bollería</a>
-        </nav>
+        <div class="menu-categorias">
+            <a href="#popular" class="categoria-tab" id="btn-popular">Popular</a>
+            <a href="#cafes" class="categoria-tab" id="btn-cafes">Cafés</a>
+            <a href="#tes" class="categoria-tab" id="btn-tes">Tés</a>
+            <a href="#bebidas" class="categoria-tab" id="btn-bebidas">Otras Bebidas</a>
+            <a href="#bolleria" class="categoria-tab" id="btn-bolleria">Bollería</a>
+
+        </div>
 
         <!-- Contenedor de productos -->
         <section class="contenedor-productos">
-            <div class="categoria-seccion" id="populares">
-                <article class="producto">
-                    <img src="americano.jpg" alt="Espresso">
-                    <h3>Espresso</h3>
-                    <p>Un café intenso y concentrado con sabor puro.</p>
-                    <p class="precio">€2.50</p>
-                </article>
-                <article class="producto">
-                    <img src="img/latte-vainilla.jpg" alt="Latte Vainilla">
-                    <h3>Latte Vainilla</h3>
-                    <p>Café con leche y un toque de vainilla.</p>
-                    <p class="precio">€3.00</p>
-                </article>
-            </div>
-
-            
-
-
-
-            
-            <div class="categoria-seccion" id="cafes">
+            <div class="categoria-seccion" id="popular">
                 <div class="producto">
-                    <img src="cafees/americano.jpg" alt="Americano">
-                    <h3>Americano</h3>
-                    <p>Café espresso con agua caliente.</p>
-                    <p class="precio">€2.20</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/cafe-con-leche.jpg" alt="CafeConLeche">
-                    <h3>Café con leche</h3>
-                    <p>Café espresso y leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/cortado-macchiato.jpg" alt="CortadoMacchiato">
-                    <h3>Cortado - Macchiato</h3>
-                    <p>Café espresso con un toque de leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/latte-macchiato.jpg" alt="LatteMacchiato">
-                    <h3>Latte Macchiato</h3>
-                    <p>Café espresso sobre leche fría con capa de leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/cafe-bombon.jpg" alt="CaféBombón">
+                    <img src="fotos/cafees/cafe-bombon.jpg" alt="CaféBombón">
                     <h3>Café Bombón</h3>
                     <p>Café sobre base de leche condensada.</p>
-                    <p class="precio">€2.20</p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/cappuccino-italiano.jpg" alt="CappuccinoItaliano">
+                    <img src="fotos/cafees/caramel.jpg" alt="Caramel">
+                    <h3>Caramel</h3>
+                    <p>Café doble espresso sobre base de salsa de caramelo y nata semimontada. Decorado con virutas de
+                        chocolate.</p>
+                    <p class="precio">€2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/cafe-con-leche.jpg" alt="CafeConLeche">
+                    <h3>Café con leche</h3>
+                    <p>Café espresso y leche caliente emulsionada.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/frappe-matcha.jpg" alt="Frappé Matcha">
+                    <h3>Frappé Matcha</h3>
+                    <p>Batido de té matcha, frappé, leche y hielo, con capa de nata semimontada.</p>
+                    <p class="precio">3.50€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/te-verde.png" alt="Té Verde">
+                    <h3>Té Verde</h3>
+                    <p>Suave y delicado té verde Sencha ecológico. Reposo 2-3 min. Teína 2/5.</p>
+                    <p class="precio">1,70€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/te-frozen-limon.jpg" alt="Té frozen limón">
+                    <h3>Té frozen limón</h3>
+                    <p>Bebida fría de té limón con hielo.</p>
+                    <p class="precio">2,75€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/pepsi.avif" alt="Pepsi">
+                    <h3>Pepsi</h3>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/KasNaranja.png" alt="KasNaranja">
+                    <h3>Kas Naranja</h3>
+                    <p class="precio">3,00€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/AquariusLimon.png" alt="AquariusLimon">
+                    <h3>Aquarius Limón</h3>
+                    <p class="precio">2,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/BombaCrema.jpg" alt="BombaCrema">
+                    <h3>Bomba de Crema</h3>
+                    <p>Masa frita en manteca, rellena de suave crema pastelera y espolvoreada con azúcar glas.</p>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Eclaier_Crema.jpg" alt="ÉclairCrema">
+                    <h3>Éclair de Crema</h3>
+                    <p>Delicada pasta choux rellena de crema pastelera y cubierta con fondant de azúcar.</p>
+                    <p class="precio">2,20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/miniTartaleta_frambuesa.jpg" alt="MiniTartaletaFrambuesa">
+                    <h3>Mini Tartaleta de Frambuesa</h3>
+                    <p>Hojaldre crujiente con suave crema y frambuesas frescas.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="categoria-seccion" id="cafes">
+                <div class="producto">
+                    <img src="fotos/cafees/americano.jpg" alt="Americano">
+                    <h3>Americano</h3>
+                    <p>Café espresso con agua caliente.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/cafe-con-leche.jpg" alt="CafeConLeche">
+                    <h3>Café con leche</h3>
+                    <p>Café espresso y leche caliente emulsionada.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/cortado-macchiato.jpg" alt="CortadoMacchiato">
+                    <h3>Cortado - Macchiato</h3>
+                    <p>Café espresso con un toque de leche caliente emulsionada.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/latte-macchiato.jpg" alt="LatteMacchiato">
+                    <h3>Latte Macchiato</h3>
+                    <p>Café espresso sobre leche fría con capa de leche caliente emulsionada.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/cafe-bombon.jpg" alt="CaféBombón">
+                    <h3>Café Bombón</h3>
+                    <p>Café sobre base de leche condensada.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/cappuccino-italiano.jpg" alt="CappuccinoItaliano">
                     <h3>Cappuccino Italiano</h3>
                     <p>Café espresso y gran capa de leche caliente emulsionada. Decorado con cacao.</p>
-                    <p class="precio">€2.20</p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/cappuccino-sabores.jpg" alt="CappuccinoSabores">
+                    <img src="fotos/cafees/cappuccino-sabores.jpg" alt="CappuccinoSabores">
                     <h3>Cappuccino Sabores</h3>
                     <p>Café espresso sobre base de sirope y gran capa de leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/mocaccino.jpg" alt="Mocaccino">
+                    <img src="fotos/cafees/mocaccino.jpg" alt="Mocaccino">
                     <h3>Mocaccino</h3>
                     <p>Café espresso sobre base de salsa de chocolate y gran capa de leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/cappuccino-tricolor.jpg" alt="CappuccinoTricolor">
-                    <h3>Cappuccino Tricolor</h3>
-                    <p>Café espresso sobre base de leche condensada y gran capa de leche caliente emulsionada.</p>
-                    <p class="precio">€2.20</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/caramel.jpg" alt="Caramel">
+                    <img src="fotos/cafees/caramel.jpg" alt="Caramel">
                     <h3>Caramel</h3>
-                    <p>Café doble espresso sobre base de salsa de caramelo y nata semimontada. Decorado con virutas de chocolate.</p>
-                    <p class="precio">€2.20</p>
+                    <p>Café doble espresso sobre base de salsa de caramelo y nata semimontada. Decorado con virutas de
+                        chocolate.</p>
+                    <p class="precio">€2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/coffee-vainilla.jpg" alt="CafeVainilla">
+                    <img src="fotos/cafees/coffee-vainilla.jpg" alt="CafeVainilla">
                     <h3>Vainilla</h3>
-                    <p>Batido frío de café doble espresso y helado de vainilla, con capa de nata semimontada. Decorado con salsa de chocolate o caramelo.</p>
-                    <p class="precio">€2.20</p>
+                    <p>Batido frío de café doble espresso y helado de vainilla, con capa de nata semimontada. Decorado
+                        con salsa de chocolate o caramelo.</p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/frappuccino.jpg" alt="Frappuccino">
+                    <img src="fotos/cafees/frappuccino.jpg" alt="Frappuccino">
                     <h3>Frappuccino</h3>
-                    <p>Batido frío de café doble espresso, leche, frappé café y hielo. Decorado con nata semimontada.</p>
-                    <p class="precio">€2.20</p>
+                    <p>Batido frío de café doble espresso, leche, frappé café y hielo. Decorado con nata semimontada.
+                    </p>
+                    <p class="precio">2.20€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/frappuccino-sabores.jpg" alt="FrappuccinoSabores">
+                    <img src="fotos/cafees/frappuccino-sabores.jpg" alt="FrappuccinoSabores">
                     <h3>Frappuccino Sabores</h3>
-                    <p>Batido frío de café doble espresso, leche, frappé vainilla, hielo y sirope a elegir. Decorado con nata semimontada.</p>
-                    <p class="precio">€2.20</p>
+                    <p>Batido frío de café doble espresso, leche, frappé vainilla, hielo y sirope a elegir. Decorado con
+                        nata semimontada.</p>
+                    <p class="precio">2.20€</p>
                 </div>
 
 
@@ -132,121 +205,222 @@
 
             <div class="categoria-seccion" id="tes">
                 <div class="producto">
-                    <img src="cafees/te-chai-latte.jpg" alt="Té chai latte">
+                    <img src="fotos/cafees/te-chai-latte.jpg" alt="Té chai latte">
                     <h3>Té chai latte</h3>
                     <p>Té chai con leche caliente emulsionada.</p>
                     <p class="precio">2.75€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-matcha-latte.jpg" alt="Té matcha latte">
+                    <img src="fotos/cafees/te-matcha-latte.jpg" alt="Té matcha latte">
                     <h3>Té matcha latte</h3>
                     <p>Té matcha con leche caliente emulsionada.</p>
                     <p class="precio">2.75€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/frappe-chai.jpg" alt="Frappé chai">
+                    <img src="fotos/cafees/frappe-chai.jpg" alt="Frappé chai">
                     <h3>Frappé chai</h3>
                     <p>Batido de té chai, frappé, leche y hielo, con capa de nata semimontada.</p>
                     <p class="precio">3.50€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/frappe-matcha.jpg" alt="Frappé Matcha">
+                    <img src="fotos/cafees/frappe-matcha.jpg" alt="Frappé Matcha">
                     <h3>Frappé Matcha</h3>
                     <p>Batido de té matcha, frappé, leche y hielo, con capa de nata semimontada.</p>
                     <p class="precio">3.50€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-verde.png" alt="Té Verde">
+                    <img src="fotos/cafees/te-verde.png" alt="Té Verde">
                     <h3>Té Verde</h3>
                     <p>Suave y delicado té verde Sencha ecológico. Reposo 2-3 min. Teína 2/5.</p>
                     <p class="precio">1,70€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-rojo.png" alt="Té rojo pur-eh">
-                    <h3>Té rojo pur-eh</h3>
-                    <p>Exquisito té rojo Pu-erh ecológico. Reposo 4 min. Teína 4/5.</p>
-                    <p class="precio">1,70€0</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/te-negro-ceylon.png" alt="Té negro ceylon">
-                    <h3>Té negro ceylon</h3>
-                    <p>Té negro ecológico cultivado en Sri Lanka. Crítico y de color rojizo. Reposo 5 min. Teína 5/5.</p>
+                    <img src="fotos/cafees/te-negro-earl-grey.png" alt="Té negro">
+                    <h3>Té negro</h3>
+                    <p>Té negro ecológico aromatizado con aceite de bergamota natural. Reposo 4-5 min. Teína 5/5.</p>
                     <p class="precio">1,70€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-negro-earl-grey.png" alt="Té negro earl grey">
-                    <h3>Té negro earl grey</h3>
-                    <p>Té negro Earl Grey ecológico aromatizado con aceite de bergamota natural. Reposo 4-5 min. Teína 5/5.</p>
-                    <p class="precio">1,70€</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/frutas-del-pacifico.png" alt="Frutas del pacífico">
-                    <h3>Frutas del pacífico</h3>
-                    <p>Infusión ecológica con una apasionante mezcla de piña y mango. Reposo 5 min.</p>
-                    <p class="precio">1,70€</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/rooibos-vainilla.png" alt="Rooibos Vainilla">
-                    <h3>Rooibos Vainilla</h3>
-                    <p>Infusión ecológica cultivada en Sudáfrica, con canela natural y el extracto de vainilla. Reposo 5-7 min.</p>
-                    <p class="precio">1,70€</p>
-                </div>
-                <div class="producto">
-                    <img src="cafees/frutos-rojos.png" alt="Frutos Rojos">
+                    <img src="fotos/cafees/frutos-rojos.png" alt="Frutos Rojos">
                     <h3>Frutos Rojos</h3>
-                    <p>Infusión ecológica que combina hibisco, escaramujo, manzana, regaliz, granada, frambuesa y grosella negra. Reposo 5 min.</p>
+                    <p>Infusión ecológica que combina hibisco, escaramujo, manzana, regaliz, granada, frambuesa y
+                        grosella negra. Reposo 5 min.</p>
                     <p class="precio">1,70€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/menta-poleo.png" alt="Menta poleo">
+                    <img src="fotos/cafees/menta-poleo.png" alt="Menta poleo">
                     <h3>Menta poleo</h3>
                     <p>Infusión ecológica de aroma intenso, penetrante y sabor fresco. Reposo 5 min.</p>
                     <p class="precio">1,70€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/manzanilla-hierbalimon.png" alt="Manzanilla hierbalimón">
+                    <img src="fotos/cafees/manzanilla-hierbalimon.png" alt="Manzanilla hierbalimón">
                     <h3>Manzanilla hierbalimón</h3>
                     <p>Infusión ecológica de flores de manzanilla y hierba-limón. Reposo 5 min.</p>
                     <p class="precio">1,70€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-frozen-limon.jpg" alt="Té frozen limón">
+                    <img src="fotos/cafees/te-frozen-limon.jpg" alt="Té frozen limón">
                     <h3>Té frozen limón</h3>
                     <p>Bebida fría de té limón con hielo.</p>
                     <p class="precio">2,75€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-frozen-menta.jpg" alt="Té frozen menta">
+                    <img src="fotos/cafees/te-frozen-menta.jpg" alt="Té frozen menta">
                     <h3>Té frozen menta</h3>
                     <p>Bebida fría de té menta con hielo.</p>
                     <p class="precio">2,75€</p>
                 </div>
                 <div class="producto">
-                    <img src="cafees/te-frozen-frutas-del-bosque.jpg" alt="Té frozen frutas del bosque">
+                    <img src="fotos/cafees/te-frozen-frutas-del-bosque.jpg" alt="Té frozen frutas del bosque">
                     <h3>Té frozen frutas del bosque</h3>
                     <p>Bebida fría de té frutas del bosque con hielo.</p>
                     <p class="precio">2,75€</p>
                 </div>
-                <div class="producto">
-                    <img src="cafees/te-frozen-melocoton.jpg" alt="Té frozen melocotón">
-                    <h3>Té frozen melocotón</h3>
-                    <p>Bebida fría de té melocotón con hielo.</p>
-                    <p class="precio">2,75€</p>
-                </div>
-
-
             </div>
 
             <div class="categoria-seccion" id="bolleria">
-                <article class="producto">
-                    <img src="img/croissant.jpg" alt="Croissant">
+                <div class="producto">
+                    <img src="fotos/cafees/masF/croissant.jpg" alt="Croissant">
                     <h3>Croissant</h3>
-                    <p>Mantequilla y hojaldre perfecto.</p>
-                    <p class="precio">€1.80</p>
-                </article>
+                    <p>Hojaldre clásico, ligero y crujiente, con un delicado toque de mantequilla.</p>
+                    <p class="precio">1.80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/napolitana.png" alt="Napolitana">
+                    <h3>Napolitana de Chocolate</h3>
+                    <p>Hojaldre dorado relleno de cremoso chocolate, con cobertura de azúcar glas.</p>
+                    <p class="precio">2.00€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/miniTartaleta_manzana.jpg" alt="MiniTartaletaManzana">
+                    <h3>Mini Tartaleta de Manzana</h3>
+                    <p>Base crujiente de hojaldre con compota de manzana y un sutil toque de canela.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/miniTartaleta_frambuesa.jpg" alt="MiniTartaletaFrambuesa">
+                    <h3>Mini Tartaleta de Frambuesa</h3>
+                    <p>Hojaldre crujiente con suave crema y frambuesas frescas.</p>
+                    <p class="precio">2.20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/mix_remolinos.jpg" alt="MixRemolinosSabores">
+                    <h3>Mix de Remolinos de Sabores</h3>
+                    <p>Selección de hojaldres enrollados con distintos rellenos: canela, cacao y vainilla.</p>
+                    <p class="precio">3.50€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/BombaCrema.jpg" alt="BombaCrema">
+                    <h3>Bomba de Crema</h3>
+                    <p>Masa frita en manteca, rellena de suave crema pastelera y espolvoreada con azúcar glas.</p>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/BombaNata.jpg" alt="BombaNata">
+                    <h3>Bomba de Nata</h3>
+                    <p>Masa frita en manteca, rellena de nata montada y espolvoreada con azúcar glas.</p>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Eclaier_Chocolate.jpg" alt="ÉclairChocolate">
+                    <h3>Éclair de Chocolate</h3>
+                    <p>Delicada pasta choux rellena de crema de chocolate y cubierta con fondant de cacao.</p>
+                    <p class="precio">2,20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Eclaier_Crema.jpg" alt="ÉclairCrema">
+                    <h3>Éclair de Crema</h3>
+                    <p>Delicada pasta choux rellena de crema pastelera y cubierta con fondant de azúcar.</p>
+                    <p class="precio">2,20€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Magdalenas.jpg" alt="Magdalenas">
+                    <h3>Magdalenas</h3>
+                    <p>Magdalenas artesanas con pura mantequilla, esponjosas y doradas.</p>
+                    <p class="precio">1,50€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Bunuelo_Crema.jpg" alt="BuñuelosCrema">
+                    <h3>Buñuelos de Crema</h3>
+                    <p>Buñuelos ligeros y dorados, rellenos de suave crema pastelera y espolvoreados con azúcar glas.
+                    </p>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Bunuelo_Nata.jpg" alt="BuñuelosNata">
+                    <h3>Buñuelos de Crema</h3>
+                    <p>Buñuelos ligeros y dorados, rellenos de dulca nata y espolvoreados con azúcar glas.</p>
+                    <p class="precio">1,80€</p>
+                </div>
             </div>
+
+            <div class="categoria-seccion" id="bebidas">
+                <div class="producto">
+                    <img src="fotos/cafees/masF/CocaCola.png" alt="CocaCola">
+                    <h3>Coca Cola</h3>
+                    <p class="precio">2,30€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/CocaColaZero.png" alt="CocaColaZero">
+                    <h3>Coca Cola Zero</h3>
+                    <p class="precio">2,30€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/CocaColaZeroZero.png" alt="CocaColaZeroZero">
+                    <h3>Coca Cola Zero Zero</h3>
+                    <p class="precio">2,30€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/KasLimon.png" alt="KasLimon">
+                    <h3>Kas Limón</h3>
+                    <p class="precio">3,00€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/KasNaranja.png" alt="KasNaranja">
+                    <h3>Kas Naranja</h3>
+                    <p class="precio">3,00€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/nestea.png" alt="Nestea">
+                    <h3>Nestea</h3>
+                    <p class="precio">2,90€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/AquariusLimon.png" alt="AquariusLimon">
+                    <h3>Aquarius Limón</h3>
+                    <p class="precio">2,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/AquariusNaranja.jpeg" alt="AquariusNaranja">
+                    <h3>Aquarius Naranja</h3>
+                    <p class="precio">2,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/Estrella.avif" alt="Estrella">
+                    <h3>Estrella Galicia</h3>
+                    <p class="precio">2,00€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/1906.avif" alt="1906">
+                    <h3>1906 Reserva</h3>
+                    <p class="precio">2,50€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/pepsi.avif" alt="Pepsi">
+                    <h3>Pepsi</h3>
+                    <p class="precio">1,80€</p>
+                </div>
+                <div class="producto">
+                    <img src="fotos/cafees/masF/agua.avif" alt="Agua">
+                    <h3>Agua Mineral</h3>
+                    <p class="precio">1,00€</p>
+                </div>
+            </div>
+
         </section>
     </div>
 
 </body>
+
 </html>
