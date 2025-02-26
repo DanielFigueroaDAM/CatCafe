@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Cabin', sans-serif;
-    background-color: #FFF9F2;
+    background-color: #f7f1e6;
     margin: 0;
     padding: 0;
     color: #493222;
@@ -11,6 +11,7 @@ h1 {
     font-family: "Titan One", serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 2.5vw; 
 }
 
 a {
@@ -32,11 +33,6 @@ a {
     padding: 5px;
 }
 
-.fecha {
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
-}
 
 /* Menú de categorías */
 .menu-categorias {
@@ -49,7 +45,7 @@ a {
 /* Estilo general para todos los botones en el menú */
 .menu-categorias .categoria-tab {
     text-decoration: none;
-    background-color: #AC6532; /* Color base para todos los botones */
+    background-color: hsl(29, 36%, 47%); /* Color base para todos los botones */
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
@@ -104,7 +100,7 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
 
 /* Contenedor de la tarjeta */
 .producto {
-    background-color: #D4A373;
+    background-color: hsl(29, 36%, 47%);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 5px 5px;

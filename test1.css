@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #493222;
-    background-color: #FFF9F2;
+    background-color: #f7f1e6;
     flex-direction: column;
 }
 
@@ -16,6 +16,7 @@ body {
     max-width: 80vw; 
     margin: 0 5vw; 
     width: 100%;
+
 }
 
 .titulo {
@@ -105,7 +106,7 @@ label {
     font-size: 1vw;
 }
 
-input, select, textarea, button {
+input, select, textarea {
     width: 100%;
     padding: 1vh;
     margin-top: 0.5vh;
@@ -118,8 +119,20 @@ button {
     color: #493222;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 1vh;
+    width: 103.25%;
+    padding: 1vh;
+    margin-top: 1vh;
+    font-size: 1vw;
 }
 
 button:hover {
     background-color: #b0b8bc;
+}
+select{
+    width: 103.25%;
+    padding: 1vh;
+    margin-top: 0.5vh;
+    font-size: 1vw;
 }

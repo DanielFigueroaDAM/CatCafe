@@ -1,45 +1,66 @@
-body{
-    background-color: #FFF9F2;
-    font-family: "Cabin", serif; 
+body {
+    background-color: #f7f1e6;
+    font-family: "Cabin", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto asegura que el body ocupe toda la altura de la ventana */
+    flex-direction: column; /* Para organizar todo de manera vertical */
 }
 
-.head{
-    
-    background-color: #AC6532;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    font-family: "Titan One", serif;
+div {
+    background-color: #f7f1e6;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* O lo que sea necesario para la organización */
+    width: 100%;
+    text-align: center; /* Asegura que el contenido de texto esté centrado */
 }
-div{
-    background-color: #FFF9F2;
-      justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-img{
+
+img {
     margin-top: 50px;
     height: 350px;
     width: 350px;
-    
 }
-.primeros3{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
 
-}
-.segundos3{
+.primeros3, .segundos3 {
     display: flex;
     flex-direction: row;
-    text-align: left;
+    justify-content: center; /* Centra los elementos dentro de estos contenedores */
+    text-align: center; /* Asegura que el texto dentro de estos también se centre */
 }
 
 .titan-one-regular {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  .primerg{
+}
+
+.primerg {
     margin-left: 3vw;
-  }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-size: 2.5vw;
+    color: #493222;
+    margin: 0;
+}
+.gato {
+    align-items: center;
+    justify-content: center;
+    max-width: 60%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+span{
+    max-width: 60%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+img{
+    border-radius: 10%;
+}
