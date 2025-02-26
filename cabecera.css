@@ -9,7 +9,7 @@ body {
   background-color: #493222;
   padding: 20px;
   display: flex;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #493222;
   font-size: 25px;
   font-family: "Titan One", serif;
   font-weight: 400;
@@ -35,7 +35,7 @@ body {
 }
 
 .navegacion a:hover {
-  color: #2c1f15;
+  color: #493222;
 }
 
 .logo img {
@@ -56,16 +56,16 @@ body {
   padding-top: 60px;
 }
 
-.text h1 {
-  text-align: center;
-  margin-bottom: 20px;
+.texto h1 {
   font-family: "Titan One", serif;
-  font-weight: 400;
-  text-align: center; 
-  width: 100%; 
-  margin: 0;
   font-size: 2.5vw; 
-  color: #493222;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  font-weight: 400;
 }
 
 .seccion-popular {

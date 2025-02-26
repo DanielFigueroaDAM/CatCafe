@@ -32,37 +32,48 @@ img {
     flex-direction: row;
     justify-content: center; /* Centra los elementos dentro de estos contenedores */
     text-align: center; /* Asegura que el texto dentro de estos también se centre */
+    gap: 100px; /* Añade espacio entre las columnas */
+    align-items: flex-start;
 }
+
+
+
+h1 {
+    font-family: "Titan One", serif;
+    font-size: 2.5vw; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    font-weight: 400;
+}
+.gato {
+    align-items: center;
+    justify-content: center;
+    max-width: 35%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 10px auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+div{
+    max-width: 80%; /* O cualquier valor que se ajuste a tus necesidades */
+    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
+}
+
+.gato h2 {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+}
+
+img{
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+}
+
 
 .titan-one-regular {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.primerg {
-    margin-left: 3vw;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Titan One", serif;
-    font-weight: 400;
-    font-size: 2.5vw;
-    color: #493222;
-    margin: 0;
-}
-.gato {
-    align-items: center;
-    justify-content: center;
-    max-width: 60%; /* O cualquier valor que se ajuste a tus necesidades */
-    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
-}
-span{
-    max-width: 60%; /* O cualquier valor que se ajuste a tus necesidades */
-    margin: 0 auto; /* Esto centra el párrafo si no ocupa todo el ancho */
-}
-img{
-    border-radius: 10%;
 }

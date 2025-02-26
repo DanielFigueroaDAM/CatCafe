@@ -13,7 +13,7 @@ body {
 .pagina {
     display: flex;
     flex-direction: column;
-    max-width: 80vw; 
+    max-width: 80%; 
     margin: 0 5vw; 
     width: 100%;
 
