@@ -35,7 +35,7 @@ body {
 }
 
 .navegacion a:hover {
-  color: #493222;
+  color: hsl(29, 36%, 47%);
 }
 
 .logo img {
@@ -71,6 +71,9 @@ body {
   font-family: "Cabin", serif;
   line-height: 1.6; 
   font-size: 20px;
+  justify-content: center;
+  max-width: 80%; 
+    margin: 50px auto;
 }
 
 .seccion-popular {
@@ -90,7 +93,7 @@ body {
 .imagenpost {
   flex-shrink: 0;
   width: 35%;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
   border-radius: 4px;
 }
