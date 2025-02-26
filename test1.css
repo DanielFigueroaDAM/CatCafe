@@ -5,7 +5,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     color: #493222;
     background-color: #FFF9F2;
     flex-direction: column;
@@ -14,7 +13,6 @@ body {
 .pagina {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     max-width: 80vw; 
     margin: 0 5vw; 
     width: 100%;
@@ -29,6 +27,7 @@ body {
     align-items: center;
     text-align: center;
     height: 10vh;
+    font-weight: 400;
 }
 
 .contenido {
@@ -40,7 +39,6 @@ body {
 .formulario {
     display: flex;
     flex-direction: column;
-    height: 85vh;
     width: 50%;
     padding: 1.5vw;
 }
@@ -48,7 +46,6 @@ body {
 .descripccion {
     display: flex;
     flex-direction: column;
-    height: 85vh;
     width: 50%;
     padding: 1.5vw;
 }

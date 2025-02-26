@@ -1,7 +1,6 @@
 body{
     background-color: #FFF9F2;
     font-family: "Cabin", serif; 
-    height: 100vh;
 }
 
 .head{
@@ -36,15 +35,7 @@ img{
     text-align: left;
 }
 
-.cabin-<uniquifier> {
-    font-family: "Cabin", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  .titan-one-regular {
+.titan-one-regular {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-style: normal;
