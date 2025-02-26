@@ -3,72 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopción</title>
-    <link rel="stylesheet" href="adopcion.css">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="test1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 class="titulo">Formulario de Adopción</h1>
-        <div class="left">
-            <form action="/submit-adoption" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="michimariñeiro@gmail.com">
-                
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address" required placeholder="Rúa Don Bigotes Nº 7, 3ºD, 15701, Vigo">
-                
-                <label for="cat">Gato que quieres adoptar:</label>
-                <select id="cat" name="cat" required>
-                    <option value="gato1">Félix</option>
-                    <option value="gato2">Mía</option>
-                    <option value="gato3">Toby</option>
-                    <option value="gato4">Nala</option>
-                    <option value="gato5">Goliat</option>
-                    <option value="gato6">ChickenMcNugget</option>
-                </select>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="3" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
+    <div class="pagina">
+        <div class="titulo">
+             <h1 class="titulo">Formulario de Adopción</h1>
+            </div>
+        <div class="contenido">
+            <div class="formulario">
+                <form action="/submit-adoption" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="michimariñeiro@gmail.com">
+                    
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required placeholder="Rúa Don Bigotes Nº 7, 3ºD, 15701, Vigo">
+                    
+                    <label for="cat">Gato que quieres adoptar:</label>
+                    <select id="cat" name="cat" required>
+                        <option value="gato1">Félix</option>
+                        <option value="gato2">Mía</option>
+                        <option value="gato3">Toby</option>
+                        <option value="gato4">Nala</option>
+                        <option value="gato5">Goliat</option>
+                        <option value="gato6">ChickenMcNugget</option>
+                    </select>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="descripccion">
+                <p class="mtexto">
+                    🐾 ¡Adopta un Bigotudo! 🐾<br><br>
+                    En Fariña e Bigotes, creemos que cada ronroneo merece un hogar. Nuestros gatos rescatados buscan familias amorosas que les den la vida que merecen. Adoptar no solo cambia la vida de un peludito, sino que también llena tu hogar de compañía y alegría.<br><br>
+                    Antes de completar el formulario, ten en cuenta:<br>
+                    🐱 Todos nuestros gatos están vacunados, desparasitados y esterilizados.<br>
+                    🏡 Buscamos adoptantes responsables y comprometidos.<br>
+                    ⏳ La adopción es un proceso, pero estaremos encantados de ayudarte en cada paso.<br><br>
+                    Si estás listo para conocer a tu próximo mejor amigo felino, rellena el formulario y nos pondremos en contacto contigo lo antes posible. ¡Gracias por darles una segunda oportunidad! 💕
+                    
+                </p>
+            </div>
         </div>
-        <div class="right">
-            <p class="mtexto">
-                🐾 ¡Adopta un Bigotudo! 🐾<br><br>
-                En Fariña e Bigotes, creemos que cada ronroneo merece un hogar. Nuestros gatos rescatados buscan familias amorosas que les den la vida que merecen. Adoptar no solo cambia la vida de un peludito, sino que también llena tu hogar de compañía y alegría.<br><br>
-                Antes de completar el formulario, ten en cuenta:<br>
-                🐱 Todos nuestros gatos están vacunados, desparasitados y esterilizados.<br>
-                🏡 Buscamos adoptantes responsables y comprometidos.<br>
-                ⏳ La adopción es un proceso, pero estaremos encantados de ayudarte en cada paso.<br><br>
-                Si estás listo para conocer a tu próximo mejor amigo felino, rellena el formulario y nos pondremos en contacto contigo lo antes posible. ¡Gracias por darles una segunda oportunidad! 💕
+        <footer class="footer">
+            <p>&copy; 2025 Farinha e Bigotes. Todos los derechos reservados.</p>
+            <p>
+                <a href="#privacy-policy">Política de Privacidad</a> | 
+                <a href="#terms-of-service">Términos de Servicio</a> | 
+                <a href="mailto:ejemploEjemploe@g.email">Contacto</a>
             </p>
-         
-               
-        </div>
+        </footer>
     </div>
-    <div class="contador">
-        <p>Gatos adoptados: <span id="adoptedCatsCount">15</span>  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z"/></svg>
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z"/></svg>
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z"/></svg>
-       </p>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2025 Farinha e Bigotes. Todos los derechos reservados.</p>
-        <p>
-            <a href="#privacy-policy">Política de Privacidad</a> | 
-            <a href="#terms-of-service">Términos de Servicio</a> | 
-            <a href="mailto:ejemploEjemploe@g.email">Contacto</a>
-        </p>
-    </footer>
 </body>
 </html>
