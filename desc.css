@@ -7,7 +7,9 @@ body {
     align-items: center;
     height: 100vh; /* Esto asegura que el body ocupe toda la altura de la ventana */
     flex-direction: column; /* Para organizar todo de manera vertical */
+    color: #493222;
 }
+
 
 div {
     background-color: #f7f1e6;
