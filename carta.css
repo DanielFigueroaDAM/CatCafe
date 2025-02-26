@@ -1,15 +1,26 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cabin', sans-serif;
     background-color: #FFF9F2;
     margin: 0;
     padding: 0;
     color: #493222;
 }
 
+h1 {
+    font-family: "Titan One", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    font-family: "Titan One", serif;
+    font-weight: 50;
+    font-style: normal;
+}
 .contenedor-principal {
     width: 90%;
-    max-width: 1200px; /* Ampliar el tamaño del contenedor */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -17,10 +28,8 @@ body {
 /* Encabezado */
 .encabezado {
     text-align: center;
-    background-color: #496977;
-    color: #FFF9F2;
-    padding: 15px;
-    border-radius: 8px;
+    color: #493222;
+    padding: 5px;
 }
 
 .fecha {
@@ -37,61 +46,59 @@ body {
     margin: 20px 0;
 }
 
-/* Estilos generales de los botones */
+/* Estilo general para todos los botones en el menú */
 .menu-categorias .categoria-tab {
     text-decoration: none;
-    background-color: #AC6532;
+    background-color: #AC6532; /* Color base para todos los botones */
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
     font-size: 16px;
-    transition: background 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-/* Mostrar solo la sección activa */
-.categoria-seccion {
-    display: none;
-}
 
 /* Mostrar la sección cuando está en :target */
 .categoria-seccion:target {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-/* Cambiar color del botón activo según la sección seleccionada */
-.menu-categorias a[href="#popular"]:target,
-.menu-categorias a[href="#bolleria"]:target,
-.menu-categorias a[href="#cafes"]:target {
-    background-color: #493222;
+/* Cambiar color de texto del botón activo */
+body:has(#popular:target) .menu-categorias a[href="#popular"],
+body:has(#bolleria:target) .menu-categorias a[href="#bolleria"],
+body:has(#cafes:target) .menu-categorias a[href="#cafes"],
+body:has(#tes:target) .menu-categorias a[href="#tes"],
+body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
+    color: #493222; /* Color de texto cuando está activo */
 }
 
-/* Si no hay una sección activa, resaltar "Popular" por defecto */
-.menu-categorias a:first-child {
-    background-color: #493222;
-}
 
 /* Contenedor de productos */
 .contenedor-productos {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 columnas */
-    gap: 40px; /* Aumentar el espacio entre las tarjetas */
+    gap: 40px;
     margin-top: 40px;
-    justify-items: center; /* Centrar las tarjetas dentro de las columnas */
+    justify-items: center;
 }
 
-/* Ocultar todas las secciones por defecto */
+/* Mostrar solo la sección activa */
 .categoria-seccion {
     display: none;
     width: 100%;
 }
 
-/* Mostrar la sección activa cuando está en el target */
+/* Mostrar la sección cuando está en :target */
 .categoria-seccion:target {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
-    justify-items: center; /* Centrar las tarjetas dentro de las columnas */
-    gap: 40px; /* Aumentar el espacio entre las tarjetas */
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -100,12 +107,12 @@ body {
     background-color: #D4A373;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px 10px 5px; /* Ajuste del padding */
+    padding: 10px 5px 5px;
     text-align: center;
     width: 150px;
     transition: transform 0.3s ease;
     position: relative;
-    margin-top: 20px; /* Reducir margen superior */
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,7 +126,7 @@ body {
 .producto img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 160px; /* Mantener tamaño de la imagen reducido */
+    max-width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 15px;
@@ -128,17 +135,32 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+.otras-bebidas .producto img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
 
 /* Nombre del producto */
 .producto h3 {
     font-size: 16px;
     color: #FFF9F2;
     margin-top: 110px;
+    margin-bottom: 2px;
+}
+
+/* Descripción del producto */
+.producto p {
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 /* Precio */
 .producto .precio {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #493222;
+    margin-top: 2px;
 }
