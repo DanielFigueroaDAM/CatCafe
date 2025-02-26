@@ -60,11 +60,14 @@ body {
   font-size: 2.5vw; 
   width: 100%;
   display: flex;
+  height: 10vh;
+  font-weight: 400;
+  margin-top: -10px; /* ajustar para mover pahrriba */
+  margin-left: 30px; /* npi */
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 10vh;
-  font-weight: 400;
+  margin-left: 18%; /*ajjusstar mas si hace falta*/
 }
 
 .descripcion p {
@@ -89,10 +92,11 @@ body {
 
 .imagenpost {
   flex-shrink: 0;
-  width: 35%;
-  max-width: 400px;
+  width: 31.5%; /* Reducido en un 10% del 35% original */
+  max-width: 360px; /* Reducido en un 10% del 400px original */
   height: auto;
   border-radius: 4px;
+  margin-top: 150px; /* Incrementado para mover la imagen más hacia abajo */
 }
 
 .imageninic {
@@ -104,6 +108,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1400px;
+  width: 100%; /* Changed from 1400px to 100% */
+  max-width: 1400px; /* Added max-width to maintain the original constraint */
   margin: 0 auto;
 }
