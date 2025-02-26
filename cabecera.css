@@ -1,4 +1,4 @@
-abe/*rama*/
+/* rama */
 body {
   font-family: "Cabin", serif;
   font-optical-sizing: auto;
@@ -43,7 +43,6 @@ body {
   border-radius: 5px;
 }
 
-
 .text {
   max-width: 1400px;
   margin: 0 auto;
@@ -56,7 +55,7 @@ body {
   padding-top: 60px;
 }
 
-.texto h1 {
+.titulo h1 {
   font-family: "Titan One", serif;
   font-size: 2.5vw; 
   width: 100%;
@@ -66,6 +65,12 @@ body {
   text-align: center;
   height: 10vh;
   font-weight: 400;
+}
+
+.descripcion p {
+  font-family: "Cabin", serif;
+  line-height: 1.6; 
+  font-size: 20px;
 }
 
 .seccion-popular {
@@ -80,8 +85,6 @@ body {
 .texto {
   flex: 1;
   font-size: 1rem;
-  line-height: 1.6;
-  font-size: 20px;
 }
 
 .imagenpost {
@@ -91,7 +94,6 @@ body {
   height: auto;
   border-radius: 4px;
 }
-
 
 .imageninic {
   height: 100%;
@@ -104,8 +106,4 @@ body {
   align-items: center;
   width: 1400px;
   margin: 0 auto;
-
-}
-.texto p{
-  font-family: "Cabin", serif;
 }

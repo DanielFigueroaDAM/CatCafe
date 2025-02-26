@@ -50,12 +50,12 @@ a {
 /* Estilo general para todos los botones en el menú */
 .menu-categorias .categoria-tab {
     text-decoration: none;
-    font-weight: 400;
-    background-color: hsl(29, 36%, 47%); /* Color base para todos los botones */
-    color: white;
+    background-color: hsl(29, 36%, 47%);
+    color: white;    
     padding: 10px 15px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 400;
     transition: color 0.3s ease;
     
 }
