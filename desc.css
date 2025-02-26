@@ -1,0 +1,54 @@
+body{
+    background-color: #FFF9F2;
+    font-family: "Cabin", serif; 
+    height: 100vh;
+}
+
+.head{
+    
+    background-color: #AC6532;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    font-family: "Titan One", serif;
+}
+div{
+    background-color: #FFF9F2;
+      justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+img{
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+    
+}
+.primeros3{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+}
+.segundos3{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.cabin-<uniquifier> {
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  .titan-one-regular {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .primerg{
+    margin-left: 3vw;
+  }
