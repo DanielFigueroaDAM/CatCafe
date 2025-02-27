@@ -99,7 +99,15 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
 /* Mostrar solo la sección activa */
 .categoria-seccion {
     display: none;
-    width: 100%;
+    
+}
+
+#popular {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 /* Mostrar la sección cuando está en :target */
@@ -171,4 +179,27 @@ body:has(#bebidas:target) .menu-categorias a[href="#bebidas"] {
     font-weight: bold;
     color: #493222;
     margin-top: 2px;
+}
+
+body:has(#popular:target) #cafes,
+body:has(#popular:target) #tes,
+body:has(#popular:target) #bebidas,
+body:has(#popular:target) #bolleria,
+body:has(#cafes:target) #popular,
+body:has(#cafes:target) #tes,
+body:has(#cafes:target) #bebidas,
+body:has(#cafes:target) #bolleria,
+body:has(#tes:target) #popular,
+body:has(#tes:target) #cafes,
+body:has(#tes:target) #bebidas,
+body:has(#tes:target) #bolleria,
+body:has(#bebidas:target) #popular,
+body:has(#bebidas:target) #cafes,
+body:has(#bebidas:target) #tes,
+body:has(#bebidas:target) #bolleria,
+body:has(#bolleria:target) #popular,
+body:has(#bolleria:target) #cafes,
+body:has(#bolleria:target) #tes,
+body:has(#bolleria:target) #bebidas {
+    display: none;
 }
