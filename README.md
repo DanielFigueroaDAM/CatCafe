@@ -35,18 +35,18 @@ Un acogedor **catcafé** donde disfrutar de un buen café, deliciosa bollería c
 ## 📄 Estructura del Proyecto
 ```
 📂 fariña-e-bigotes
-├─ 📄 index.html              # Página principal
-├─ 📄 index.css               # Página style general
+├─ 📄 index.html              # Página principal (iframes)
+├─ 📄 index.css               # Style General
 ├─ 📄 cabecera.html           # Espacio Cabecera
-├─ 📄 index.css               # Style Cabecera
+├─ 📄 cabecera.css            # Style Cabecera
 ├─ 📄 carta.html              # Espacio Carta
 ├─ 📄 carta.css               # Style Carta
-├─ 📄 gatosDescripcion.html   # Espacio Gatitos
-├─ 📄 desc.css                # Style Gatitos
+├─ 📄 gatitos.html            # Espacio Gatitos
+├─ 📄 gatitos.css             # Style Gatitos
 ├─ 📄 adopcion.html           # Espacio Formulario
-├─ 📄 test1.css               # Style Formulario
-└─ 📂 fotos                   # Carpeta de imágenes
-   └─ cafees                  # Imagenes de carta
+├─ 📄 adopcion.css            # Style Formulario
+└─ 📂 fotos                   # Carpeta Imágenes
+   └─ cafees                  # Imagenes Carta
 ```
 
 ---
